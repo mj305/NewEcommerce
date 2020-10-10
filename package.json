@@ -8,9 +8,11 @@
     "start": "next start"
   },
   "dependencies": {
+    "jsonwebtoken": "^8.5.1",
     "next": "9.5.4",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "sass": "^1.27.0"
+    "sass": "^1.27.0",
+    "uuid": "^8.3.1"
   }
 }
