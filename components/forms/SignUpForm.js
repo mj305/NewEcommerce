@@ -7,22 +7,12 @@ const SignUpForm = () => {
 
   const signUpUser = async (data) => {
     try {
-      const result = await axios.post(
-        "https://api.bigcommerce.com/stores/m48amdwp20/v3/customers",
-        {
-          data,
-        },
-        {
-          headers: {
-            "Content-Type": "application/json",
-            "X-Auth-Client": "4b90lbc8d76whmbmtttdxx6zqyhpohw",
-            "X-Auth-Token": "ckuij76tgurkmapz1gspgbihq7doxd9",
-          },
-        }
-      );
+      const result = await axios.post("/api/auth/signup", {
+        data: data[0],
+      });
       console.log(result);
     } catch (error) {
-      console.log(error);
+      console.log("Error: ", error);
     }
   };
 
@@ -74,7 +64,7 @@ const SignUpForm = () => {
 
   return (
     <>
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form className="form-container_signup" onSubmit={handleSubmit(onSubmit)}>
         <input
           placeholder="First Name"
           name="firstName"
