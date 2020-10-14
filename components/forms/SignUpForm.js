@@ -8,7 +8,7 @@ const SignUpForm = () => {
   const signUpUser = async (data) => {
     try {
       const result = await axios.post("/api/auth/signup", {
-        data: data[0],
+        data,
       });
       console.log(result);
     } catch (error) {
