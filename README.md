@@ -3,8 +3,6 @@
 
 ## About the App
 NextJs frontend integrated with BigCommerce
-
- [The Reign Experience Live App](https://thereignexperience.netlify.app/)
  
 
 ## Technologies used
